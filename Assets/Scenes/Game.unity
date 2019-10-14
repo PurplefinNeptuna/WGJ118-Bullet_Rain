@@ -195,7 +195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28689080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.034, y: -4.13, z: 0}
+  m_LocalPosition: {x: 0, y: -3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1979238859}
@@ -216,6 +216,7 @@ MonoBehaviour:
   moveSpeed: 5
   moveDist: 0
   area: {fileID: 1979238857}
+  bullet: {fileID: 229725614846872872, guid: 6a5cae8e8f5bf5a4daf2825ad6d654fa, type: 3}
   thisTransform: {fileID: 0}
   movement: {x: 0, y: 0, z: 0}
   playerSize: {x: 0, y: 0}
@@ -443,7 +444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979238857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 28689082}

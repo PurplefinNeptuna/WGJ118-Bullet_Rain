@@ -6,10 +6,14 @@ public class Player : MonoBehaviour {
 	public float moveSpeed = 5f;
 	public float moveDist = 0f;
 	public GameObject area;
+	public GameObject bullet;
 	public Transform thisTransform;
 	public Vector3 movement;
 	public Vector2 playerSize;
 	public Vector2 playableSize;
+
+	private float shootCooldown = 0.05f;
+	private float shootCooldownDef = 0.05f;
 
 	private void Awake() {
 		thisTransform = transform;
@@ -27,11 +31,22 @@ public class Player : MonoBehaviour {
 		movement = Vector3.zero;
 		PlayerControl();
 		thisTransform.localPosition += movement;
+		shootCooldown -= Time.deltaTime;
+		PlayerShoot();
+		if(shootCooldown<=0f){
+			shootCooldown += shootCooldownDef;
+		}
 	}
 
 	private void PlayerControl() {
 		moveDist = Time.deltaTime * moveSpeed;
 		movement.x = moveDist * Input.GetAxisRaw("Horizontal");
 		movement.y = moveDist * Input.GetAxisRaw("Vertical");
+	}
+
+	private void PlayerShoot() {
+		if (Input.GetButton("Fire1") && shootCooldown <= 0f) {
+			Instantiate(bullet, thisTransform.position, Quaternion.identity, area.transform);
+		}
 	}
 }
