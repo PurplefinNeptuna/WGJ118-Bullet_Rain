@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-	public float moveSpeed = 5f;
+	public float moveSpeed = 7f;
 	public float moveDist = 0f;
 	public GameObject area;
 	public GameObject bullet;
@@ -14,28 +14,43 @@ public class Player : MonoBehaviour {
 
 	private float shootCooldown = 0.05f;
 	private float shootCooldownDef = 0.05f;
+	private Vector2 realPlayableSize;
+	private Vector3 displacement;
 
 	private void Awake() {
 		thisTransform = transform;
 		movement = Vector3.zero;
 		playerSize = GetComponent<SpriteRenderer>().bounds.size;
 		playableSize = area.GetComponent<SpriteRenderer>().bounds.size;
-	}
-
-	private void Start() {
-		Debug.Log(playerSize);
-		Debug.Log(playableSize);
+		realPlayableSize = playableSize - playerSize;
+		displacement = Vector3.zero;
 	}
 
 	private void Update() {
 		movement = Vector3.zero;
+		displacement = Vector3.zero;
+		if (shootCooldown > 0f) {
+			shootCooldown -= Time.deltaTime;
+		}
 		PlayerControl();
 		thisTransform.localPosition += movement;
-		shootCooldown -= Time.deltaTime;
+		PlayerCheckPos();
 		PlayerShoot();
-		if(shootCooldown<=0f){
-			shootCooldown += shootCooldownDef;
+	}
+
+	private void PlayerCheckPos() {
+		if (thisTransform.localPosition.x < -realPlayableSize.x / 2) {
+			displacement.x = -realPlayableSize.x / 2 - thisTransform.localPosition.x;
+		} else if (thisTransform.localPosition.x > realPlayableSize.x / 2) {
+			displacement.x = realPlayableSize.x / 2 - thisTransform.localPosition.x;
 		}
+
+		if (thisTransform.localPosition.y < -realPlayableSize.y / 2) {
+			displacement.y = -realPlayableSize.y / 2 - thisTransform.localPosition.y;
+		} else if (thisTransform.localPosition.y > realPlayableSize.y / 2) {
+			displacement.y = realPlayableSize.y / 2 - thisTransform.localPosition.y;
+		}
+		thisTransform.localPosition += displacement;
 	}
 
 	private void PlayerControl() {
@@ -47,6 +62,9 @@ public class Player : MonoBehaviour {
 	private void PlayerShoot() {
 		if (Input.GetButton("Fire1") && shootCooldown <= 0f) {
 			Instantiate(bullet, thisTransform.position, Quaternion.identity, area.transform);
+			while (shootCooldown <= 0f) {
+				shootCooldown += shootCooldownDef;
+			}
 		}
 	}
 }
