@@ -6,7 +6,7 @@ public class Brain : MonoBehaviour {
 	public static Brain main;
 
 	public GameObject area;
-	
+
 	private void Awake() {
 		if (main == null) {
 			main = this;
