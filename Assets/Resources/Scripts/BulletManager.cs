@@ -6,11 +6,25 @@ using UnityEngine;
 public class BulletManager : MonoBehaviour {
 
 	public static BulletManager main;
+
+	public List<BaseBullet> bullets;
+
 	private void Awake() {
+		#region singleton
 		if (main == null) {
 			main = this;
 		} else if (main != this) {
 			Destroy(gameObject);
+		}
+		#endregion
+
+		bullets = new List<BaseBullet>();
+	}
+
+	private void FixedUpdate() {
+		float deltaTime = Time.fixedDeltaTime;
+		for(int i=0; i<bullets.Count; i++){
+			bullets[i].Update(deltaTime);
 		}
 	}
 
@@ -28,7 +42,7 @@ public class BulletManager : MonoBehaviour {
 	/// <returns>GameObject of spawned projectile</returns>
 	public BaseBullet Spawn(Vector2 worldPos, float speed, Vector2 direction, GameObject source, int damage = 5, string shapeName = "Bullet", string behaviourName = "BaseBullet", string sound = null) {
 		Type type;
-		GameObject prefab = Resources.Load<GameObject>("Bullets/" + shapeName);
+		GameObject prefab = Resources.Load<GameObject>("Prefabs/Bullets/" + shapeName);
 		try {
 			type = Type.GetType(behaviourName);
 		} catch {
@@ -37,7 +51,7 @@ public class BulletManager : MonoBehaviour {
 		}
 
 		direction.Normalize();
-		GameObject result = GameObject.Instantiate<GameObject>(prefab, worldPos, Quaternion.identity, Brain.main.area.transform);
+		GameObject result = Instantiate(prefab, worldPos, Quaternion.identity, Brain.main.area.transform);
 		BaseBullet bulletSpawned = Activator.CreateInstance(type)as BaseBullet;
 		bulletSpawned.bullet = result;
 		bulletSpawned.source = source;
@@ -46,9 +60,20 @@ public class BulletManager : MonoBehaviour {
 		bulletSpawned.defaultDirection = direction;
 		bulletSpawned.direction = direction;
 		bulletSpawned.damage = damage;
+		bulletSpawned.BaseInit();
 		//result.AddComponent(type);
 		//result.transform.rotation = MVUtility.TopDownRotationFromDirection(direction);
 		//BaseBullet projectile = result.GetComponent(type) as BaseBullet;
+		bullets.Add(bulletSpawned);
 		return bulletSpawned;
+	}
+
+	/// <summary>
+	/// Destroy the bullet
+	/// </summary>
+	/// <param name="theBullet">the bullet to be deleted</param>
+	public void Destroy(BaseBullet theBullet){
+		Destroy(theBullet.bullet);
+		bullets.Remove(theBullet);
 	}
 }

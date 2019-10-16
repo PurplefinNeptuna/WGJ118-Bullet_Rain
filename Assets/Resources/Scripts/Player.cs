@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 	public float moveSpeed = 7f;
 	public float moveDist = 0f;
-	public GameObject area;
 	public GameObject bullet;
 	public Transform thisTransform;
 	public Vector3 movement;
@@ -21,7 +20,7 @@ public class Player : MonoBehaviour {
 		thisTransform = transform;
 		movement = Vector3.zero;
 		playerSize = GetComponent<SpriteRenderer>().bounds.size;
-		playableSize = area.GetComponent<SpriteRenderer>().bounds.size;
+		playableSize = Brain.main.areaRenderer.bounds.size;
 		realPlayableSize = playableSize - playerSize;
 		displacement = Vector3.zero;
 	}
@@ -61,7 +60,7 @@ public class Player : MonoBehaviour {
 
 	private void PlayerShoot() {
 		if (Input.GetButton("Fire1") && shootCooldown <= 0f) {
-			Instantiate(bullet, thisTransform.position, Quaternion.identity, area.transform);
+			Instantiate(bullet, thisTransform.position, Quaternion.identity, Brain.main.area.transform);
 			while (shootCooldown <= 0f) {
 				shootCooldown += shootCooldownDef;
 			}

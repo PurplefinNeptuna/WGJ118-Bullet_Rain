@@ -13,7 +13,7 @@ public class PlayerBullet : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (!thisRenderer.isVisible) {
+		if (!Brain.main.PointInArea(thisTransform.localPosition)) {
 			Destroy(gameObject);
 		}
 	}

@@ -6,6 +6,7 @@ public class Brain : MonoBehaviour {
 	public static Brain main;
 
 	public GameObject area;
+	public SpriteRenderer areaRenderer;
 
 	private void Awake() {
 		if (main == null) {
@@ -13,6 +14,12 @@ public class Brain : MonoBehaviour {
 		} else if (main != this) {
 			Destroy(gameObject);
 		}
+
+		areaRenderer = area.GetComponent<SpriteRenderer>();
+	}
+
+	public bool PointInArea(Vector2 point){
+		return areaRenderer.bounds.Contains(point);
 	}
 
 }
