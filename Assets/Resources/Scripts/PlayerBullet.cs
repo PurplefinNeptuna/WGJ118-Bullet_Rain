@@ -13,7 +13,7 @@ public class PlayerBullet : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (!Brain.main.PointInArea(thisTransform.localPosition)) {
+		if (!Brain.main.PointInArea(thisTransform.position)) {
 			Destroy(gameObject);
 		}
 	}

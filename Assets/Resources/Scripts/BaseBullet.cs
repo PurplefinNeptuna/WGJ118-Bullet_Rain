@@ -14,7 +14,7 @@ public class BaseBullet {
 	public float speed;
 	public Vector2 defaultDirection;
 	public Vector2 direction;
-	public GameObject source;
+	public Vector3 source;
 	public int damage;
 
 	private Vector3 displacement;
@@ -43,7 +43,7 @@ public class BaseBullet {
 	}
 
 	public virtual void PostUpdate(float deltaTime) {
-		if (!Brain.main.PointInArea((Vector2)Position)) {
+		if (!Brain.main.PointInArea(transform.position)) {
 			BulletManager.main.Destroy(this);
 		}
 	}

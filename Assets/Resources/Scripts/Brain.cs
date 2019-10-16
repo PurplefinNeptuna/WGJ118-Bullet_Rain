@@ -18,8 +18,8 @@ public class Brain : MonoBehaviour {
 		areaRenderer = area.GetComponent<SpriteRenderer>();
 	}
 
-	public bool PointInArea(Vector2 point){
-		return areaRenderer.bounds.Contains(point);
+	public bool PointInArea(Vector2 worldPoint) {
+		return areaRenderer.bounds.Contains(worldPoint);
 	}
 
 }

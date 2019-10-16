@@ -23,7 +23,7 @@ public class BulletManager : MonoBehaviour {
 
 	private void FixedUpdate() {
 		float deltaTime = Time.fixedDeltaTime;
-		for(int i=0; i<bullets.Count; i++){
+		for (int i = 0; i < bullets.Count; i++) {
 			bullets[i].Update(deltaTime);
 		}
 	}
@@ -54,7 +54,7 @@ public class BulletManager : MonoBehaviour {
 		GameObject result = Instantiate(prefab, worldPos, Quaternion.identity, Brain.main.area.transform);
 		BaseBullet bulletSpawned = Activator.CreateInstance(type)as BaseBullet;
 		bulletSpawned.bullet = result;
-		bulletSpawned.source = source;
+		bulletSpawned.source = source.transform.localPosition;
 		bulletSpawned.defaultSpeed = speed;
 		bulletSpawned.speed = speed;
 		bulletSpawned.defaultDirection = direction;
@@ -72,7 +72,7 @@ public class BulletManager : MonoBehaviour {
 	/// Destroy the bullet
 	/// </summary>
 	/// <param name="theBullet">the bullet to be deleted</param>
-	public void Destroy(BaseBullet theBullet){
+	public void Destroy(BaseBullet theBullet) {
 		Destroy(theBullet.bullet);
 		bullets.Remove(theBullet);
 	}
