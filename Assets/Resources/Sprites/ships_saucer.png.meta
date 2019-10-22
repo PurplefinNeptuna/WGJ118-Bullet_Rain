@@ -1,0 +1,991 @@
+fileFormatVersion: 2
+guid: 87ed40947079b9249bd13166d986b5e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4134196495296110011
+    second: ships_saucer_0
+  - first:
+      213: 3364700418499308664
+    second: ships_saucer_1
+  - first:
+      213: 257514784242367028
+    second: ships_saucer_2
+  - first:
+      213: -2081060348925880215
+    second: ships_saucer_3
+  - first:
+      213: 6193410874519847234
+    second: ships_saucer_4
+  - first:
+      213: 6689247189221736263
+    second: ships_saucer_5
+  - first:
+      213: 4329526473727797136
+    second: ships_saucer_6
+  - first:
+      213: 7967603083789364076
+    second: ships_saucer_7
+  - first:
+      213: -3838784893497944772
+    second: ships_saucer_8
+  - first:
+      213: 7881731465814872298
+    second: ships_saucer_9
+  - first:
+      213: -7936984902563351442
+    second: ships_saucer_10
+  - first:
+      213: -8141999732078951940
+    second: ships_saucer_11
+  - first:
+      213: 104441566645790884
+    second: ships_saucer_12
+  - first:
+      213: 6134543895087081144
+    second: ships_saucer_13
+  - first:
+      213: -2635881071078336857
+    second: ships_saucer_14
+  - first:
+      213: 8828935212563177444
+    second: ships_saucer_15
+  - first:
+      213: 2199883099521904388
+    second: ships_saucer_16
+  - first:
+      213: -7728811462851207856
+    second: ships_saucer_17
+  - first:
+      213: 5400167844628064135
+    second: ships_saucer_18
+  - first:
+      213: -3005188951596068883
+    second: ships_saucer_19
+  - first:
+      213: -3000154153821391639
+    second: ships_saucer_20
+  - first:
+      213: -6294041990036342753
+    second: ships_saucer_21
+  - first:
+      213: -9195329184906505368
+    second: ships_saucer_22
+  - first:
+      213: 4266090789609562620
+    second: ships_saucer_23
+  - first:
+      213: 5400531172174577694
+    second: ships_saucer_24
+  - first:
+      213: -8456162092758294340
+    second: ships_saucer_25
+  - first:
+      213: 2340156308306347016
+    second: ships_saucer_26
+  - first:
+      213: -3767203571990013889
+    second: ships_saucer_27
+  - first:
+      213: -6218919774438057296
+    second: ships_saucer_28
+  - first:
+      213: 7970714370678217569
+    second: ships_saucer_29
+  - first:
+      213: 4908482395393607670
+    second: ships_saucer_30
+  - first:
+      213: -5610056785820584032
+    second: ships_saucer_31
+  - first:
+      213: -3606278956319070360
+    second: ships_saucer_32
+  - first:
+      213: -2536358306742028562
+    second: ships_saucer_33
+  - first:
+      213: -6603689202085287018
+    second: ships_saucer_34
+  - first:
+      213: 569239825565382233
+    second: ships_saucer_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ships_saucer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 856
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf589b5e8578c5247bc39aaaee968d18
+      internalID: 4134196495296110011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 772
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646b53bcd4407064ab35f17fedd71db2
+      internalID: 3364700418499308664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 768
+        width: 80
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aaaa705f4c6393418c7199de34e9f33
+      internalID: 257514784242367028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 764
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9049411897e7989469a78f60b92ec0e0
+      internalID: -2081060348925880215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 760
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b79b23c36e2e0149baf153f72b02471
+      internalID: 6193410874519847234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 760
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e549fb35b0de37346a018c8ea1eea27e
+      internalID: 6689247189221736263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_6
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 760
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e166f4c2e2dee0d44aef3952a582efed
+      internalID: 4329526473727797136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_7
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 760
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6564e79a5f42546bdbaf35cbb6f963
+      internalID: 7967603083789364076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 192
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7850db35d390a4b448a86afbd2276d71
+      internalID: -3838784893497944772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 632
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142b9cd9ec77a694ba9eeaabbd3dcef5
+      internalID: 7881731465814872298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 548
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9d1aa3b65eefc4e99f171ed585a0fa
+      internalID: -7936984902563351442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 544
+        width: 80
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f7a81706b16b24bb88fdcf9275e2e2
+      internalID: -8141999732078951940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 540
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1392a71f3f1343e4eb6ca0b128ee698f
+      internalID: 104441566645790884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_13
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 536
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83efbc174edeb914980b7cf34975d4d9
+      internalID: 6134543895087081144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_14
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 536
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf3c6caece43b46902041a01718136
+      internalID: -2635881071078336857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_15
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 536
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5214d12e120f524dbbeb8dc89ff42bd
+      internalID: 8828935212563177444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_16
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 536
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47290e7c6d93654688f90a9ac3ca221
+      internalID: 2199883099521904388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 192
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5333460b4dfc744795495aa7492ecce
+      internalID: -7728811462851207856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a692ab8440cfd6440a6642956ac6e3fe
+      internalID: 5400167844628064135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_19
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 324
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e278bbae74f3c614c80fffd7ff2772b8
+      internalID: -3005188951596068883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_20
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 320
+        width: 80
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f103ddff4bf6ca941ba2077415d570dd
+      internalID: -3000154153821391639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_21
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 316
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24fbb8893f774f409361fe73503d07e
+      internalID: -6294041990036342753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_22
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 312
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a65c1bbdb0f4f14ab28522ff6ac4930
+      internalID: -9195329184906505368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 312
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce1cb63a3b0e564988bef4739a8c67d
+      internalID: 4266090789609562620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_24
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 312
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93121aede34a9484191140d1f5aff704
+      internalID: 5400531172174577694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_25
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 312
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb2df7c2b4fa274583e0c2fda6328da
+      internalID: -8456162092758294340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 192
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127f29e5ddd30c347a2e8e0f8661242f
+      internalID: 2340156308306347016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92de2540e77acb644a710b8ce6bbca96
+      internalID: -3767203571990013889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 100
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e842f5c74c79f4c92cf2b589defe11
+      internalID: -6218919774438057296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 80
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a3d11b60cfe4247b3b2113c8f95442
+      internalID: 7970714370678217569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 92
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2212193c966b2fe4883d20ca02cc5d8f
+      internalID: 4908482395393607670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_31
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 88
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bee98087922de40bf41a71196280d9
+      internalID: -5610056785820584032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_32
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 88
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7524d096fb14e9d4fb412641cbab60b5
+      internalID: -3606278956319070360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_33
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 88
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32d163acf25def4aa7da6d34e663e88
+      internalID: -2536358306742028562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_34
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 88
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113783483acfa3046a75fcacff093884
+      internalID: -6603689202085287018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ships_saucer_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755cb4efe21885748a701c27ec311197
+      internalID: 569239825565382233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

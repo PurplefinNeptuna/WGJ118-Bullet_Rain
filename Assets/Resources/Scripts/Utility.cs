@@ -31,4 +31,12 @@ public static class Utility {
 	public static Vector2 RotateCW(this Vector2 aVec, float aDegree) {
 		return ComplexMult(aVec, Rotation(-aDegree));
 	}
+
+	/// <summary>
+	/// Rotate to direction (for top down)
+	/// </summary>
+	/// <param name="dir">direction of rotation</param>
+	public static Quaternion TopDownRotationFromDirection(Vector2 dir) {
+		return Quaternion.LookRotation(Vector3.forward, dir);
+	}
 }

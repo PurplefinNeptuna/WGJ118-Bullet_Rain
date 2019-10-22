@@ -22,7 +22,7 @@ public class PlayerBullet : MonoBehaviour {
 		thisTransform.localPosition += new Vector3(0f, speed * Time.fixedDeltaTime, 0f);
 		int count = Physics2D.OverlapAreaNonAlloc((-1f / 2f) * thisRenderer.bounds.size + thisTransform.position, (1f / 2f) * thisRenderer.bounds.size + thisTransform.position, colliderHitBuffer, enemyLayer);
 		for (int i = 0; i < count; i++) {
-			colliderHitBuffer[i].GetComponent<Enemy>().health--;
+			colliderHitBuffer[i].GetComponent<BaseEnemy>().health--;
 		}
 		if (count > 0) {
 			Destroy(gameObject);

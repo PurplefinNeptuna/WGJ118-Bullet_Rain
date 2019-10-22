@@ -23,6 +23,7 @@ public class BaseBullet {
 	public void BaseInit() {
 		renderer = bullet.GetComponent<SpriteRenderer>();
 		transform = bullet.transform;
+		renderer.sortingLayerName = "Bullet";
 		Init();
 	}
 

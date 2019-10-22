@@ -15,6 +15,11 @@ public class Player : MonoBehaviour {
 	private float shootCooldownDef = 0.05f;
 	private Vector2 realPlayableSize;
 	private Vector3 displacement;
+	private Vector3 BulletPoint {
+		get {
+			return thisTransform.position + new Vector3(0f, playerSize.y / 2f, 0f);
+		}
+	}
 
 	private void Awake() {
 		thisTransform = transform;
@@ -60,7 +65,7 @@ public class Player : MonoBehaviour {
 
 	private void PlayerShoot() {
 		if (Input.GetButton("Fire1") && shootCooldown <= 0f) {
-			Instantiate(bullet, thisTransform.position, Quaternion.identity, Brain.main.area.transform);
+			Instantiate(bullet, BulletPoint, Quaternion.identity, Brain.main.area.transform);
 			while (shootCooldown <= 0f) {
 				shootCooldown += shootCooldownDef;
 			}

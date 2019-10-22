@@ -1,0 +1,25 @@
+Enemies:
+	-Popcorn
+	-Normal
+	-Aimer
+	-Backstabber
+	-Heavy
+	-Miniboss
+	-Bosss
+
+Bullet Behaviour:
+	-Serial Preproc
+	-Parallel Update pos
+	-Serial Postproc
+	Profit?
+
+Level Choreograph:
+Time based
+
+Credits:
+surt (https://opengameart.org/users/surt)
+alpha_rats (http://alpharats.com)
+Matriax (https://opengameart.org/users/matriax)
+Mumu (https://opengameart.org/users/mumu)
+Xavier4321 (https://opengameart.org/users/xavier4321)
+wuhu (https://opengameart.org/users/wuhu)
