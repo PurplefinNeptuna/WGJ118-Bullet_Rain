@@ -16,9 +16,6 @@ public class Boss0 : BaseEnemy {
 
 	public override void AIUpdate(float deltaTime){
 		thisTransform.rotation = Utility.TopDownRotationFromDirection(shootDir);
-	}
-
-	private void FixedUpdate() {
 		shootDir = shootDir.RotateCW(rotateSpeed * Time.fixedDeltaTime);
 		shootDir.Normalize();
 		shootDir2 = shootDir.RotateCW(120f);
@@ -33,5 +30,22 @@ public class Boss0 : BaseEnemy {
 			BulletManager.main.Spawn(transform.position, 3f, shootDir3, gameObject, 5, "Bullet", "BossBullet1_1");
 			shootCooldown += shootCooldownDef;
 		}
+	}
+
+	private void FixedUpdate() {
+		// shootDir = shootDir.RotateCW(rotateSpeed * Time.fixedDeltaTime);
+		// shootDir.Normalize();
+		// shootDir2 = shootDir.RotateCW(120f);
+		// shootDir2.Normalize();
+		// shootDir3 = shootDir.RotateCCW(120f);
+		// shootDir3.Normalize();
+		// if (shootCooldown > 0f) {
+		// 	shootCooldown -= Time.deltaTime;
+		// } else {
+		// 	BulletManager.main.Spawn(transform.position, 3f, shootDir, gameObject, 5, "Bullet", "BossBullet1_1");
+		// 	BulletManager.main.Spawn(transform.position, 3f, shootDir2, gameObject, 5, "Bullet", "BossBullet1_1");
+		// 	BulletManager.main.Spawn(transform.position, 3f, shootDir3, gameObject, 5, "Bullet", "BossBullet1_1");
+		// 	shootCooldown += shootCooldownDef;
+		// }
 	}
 }

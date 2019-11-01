@@ -9,9 +9,10 @@ public class Brain : MonoBehaviour {
 	public SpriteRenderer areaRenderer;
 
 	private void Awake() {
-		if (main == null) {
+		if(main == null) {
 			main = this;
-		} else if (main != this) {
+		}
+		else if(main != this) {
 			Destroy(gameObject);
 		}
 

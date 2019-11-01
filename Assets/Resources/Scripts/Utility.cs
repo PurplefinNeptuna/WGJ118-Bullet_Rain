@@ -39,4 +39,11 @@ public static class Utility {
 	public static Quaternion TopDownRotationFromDirection(Vector2 dir) {
 		return Quaternion.LookRotation(Vector3.forward, dir);
 	}
+
+	/// <summary>
+	/// Return the smallest vector
+	/// </summary>
+	public static Vector3 MinVec3(Vector3 a, Vector3 b) {
+		return a.sqrMagnitude < b.sqrMagnitude ? a : b;
+	}
 }

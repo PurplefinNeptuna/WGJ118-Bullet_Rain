@@ -33,7 +33,7 @@ public class Player : MonoBehaviour {
 	private void Update() {
 		movement = Vector3.zero;
 		displacement = Vector3.zero;
-		if (shootCooldown > 0f) {
+		if(shootCooldown > 0f) {
 			shootCooldown -= Time.deltaTime;
 		}
 		PlayerControl();
@@ -43,15 +43,17 @@ public class Player : MonoBehaviour {
 	}
 
 	private void PlayerCheckPos() {
-		if (thisTransform.localPosition.x < -realPlayableSize.x / 2) {
+		if(thisTransform.localPosition.x < -realPlayableSize.x / 2) {
 			displacement.x = -realPlayableSize.x / 2 - thisTransform.localPosition.x;
-		} else if (thisTransform.localPosition.x > realPlayableSize.x / 2) {
+		}
+		else if(thisTransform.localPosition.x > realPlayableSize.x / 2) {
 			displacement.x = realPlayableSize.x / 2 - thisTransform.localPosition.x;
 		}
 
-		if (thisTransform.localPosition.y < -realPlayableSize.y / 2) {
+		if(thisTransform.localPosition.y < -realPlayableSize.y / 2) {
 			displacement.y = -realPlayableSize.y / 2 - thisTransform.localPosition.y;
-		} else if (thisTransform.localPosition.y > realPlayableSize.y / 2) {
+		}
+		else if(thisTransform.localPosition.y > realPlayableSize.y / 2) {
 			displacement.y = realPlayableSize.y / 2 - thisTransform.localPosition.y;
 		}
 		thisTransform.localPosition += displacement;
@@ -64,9 +66,9 @@ public class Player : MonoBehaviour {
 	}
 
 	private void PlayerShoot() {
-		if (Input.GetButton("Fire1") && shootCooldown <= 0f) {
+		if(Input.GetButton("Fire1") && shootCooldown <= 0f) {
 			Instantiate(bullet, BulletPoint, Quaternion.identity, Brain.main.area.transform);
-			while (shootCooldown <= 0f) {
+			while(shootCooldown <= 0f) {
 				shootCooldown += shootCooldownDef;
 			}
 		}

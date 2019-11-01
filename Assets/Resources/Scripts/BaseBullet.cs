@@ -44,7 +44,7 @@ public class BaseBullet {
 	}
 
 	public virtual void PostUpdate(float deltaTime) {
-		if (!Brain.main.PointInArea(transform.position)) {
+		if(!Brain.main.PointInArea(transform.position)) {
 			BulletManager.main.Destroy(this);
 		}
 	}

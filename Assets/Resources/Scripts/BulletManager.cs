@@ -11,9 +11,10 @@ public class BulletManager : MonoBehaviour {
 
 	private void Awake() {
 		#region singleton
-		if (main == null) {
+		if(main == null) {
 			main = this;
-		} else if (main != this) {
+		}
+		else if(main != this) {
 			Destroy(gameObject);
 		}
 		#endregion
@@ -23,7 +24,7 @@ public class BulletManager : MonoBehaviour {
 
 	private void FixedUpdate() {
 		float deltaTime = Time.fixedDeltaTime;
-		for (int i = 0; i < bullets.Count; i++) {
+		for(int i = 0; i < bullets.Count; i++) {
 			bullets[i].Update(deltaTime);
 		}
 	}
@@ -45,14 +46,15 @@ public class BulletManager : MonoBehaviour {
 		GameObject prefab = Resources.Load<GameObject>("Prefabs/Bullets/" + shapeName);
 		try {
 			type = Type.GetType(behaviourName);
-		} catch {
+		}
+		catch {
 			//type = typeof(DefaultBullet);
 			return null;
 		}
 
 		direction.Normalize();
 		GameObject result = Instantiate(prefab, worldPos, Quaternion.identity, Brain.main.area.transform);
-		BaseBullet bulletSpawned = Activator.CreateInstance(type)as BaseBullet;
+		BaseBullet bulletSpawned = Activator.CreateInstance(type) as BaseBullet;
 		bulletSpawned.bullet = result;
 		bulletSpawned.source = source.transform.localPosition;
 		bulletSpawned.defaultSpeed = speed;
