@@ -32,7 +32,7 @@ public class Boss0 : BaseEnemy {
 		}
 	}
 
-	private void FixedUpdate() {
+	//private void FixedUpdate() {
 		// shootDir = shootDir.RotateCW(rotateSpeed * Time.fixedDeltaTime);
 		// shootDir.Normalize();
 		// shootDir2 = shootDir.RotateCW(120f);
@@ -47,5 +47,5 @@ public class Boss0 : BaseEnemy {
 		// 	BulletManager.main.Spawn(transform.position, 3f, shootDir3, gameObject, 5, "Bullet", "BossBullet1_1");
 		// 	shootCooldown += shootCooldownDef;
 		// }
-	}
+	//}
 }
