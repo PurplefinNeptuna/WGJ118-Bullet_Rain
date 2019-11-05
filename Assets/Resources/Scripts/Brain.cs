@@ -7,6 +7,7 @@ public class Brain : MonoBehaviour {
 
 	public GameObject area;
 	public SpriteRenderer areaRenderer;
+	public Player player;
 
 	private void Awake() {
 		if(main == null) {
