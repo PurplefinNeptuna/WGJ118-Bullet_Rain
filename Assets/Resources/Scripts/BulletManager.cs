@@ -41,7 +41,7 @@ public class BulletManager : MonoBehaviour {
 	/// <param name="behaviourName">name of the projectile AI class</param>
 	/// <param name="sound">projectile sound when spawning</param>
 	/// <returns>GameObject of spawned projectile</returns>
-	public BaseBullet Spawn(Vector2 worldPos, float speed, Vector2 direction, GameObject source, int damage = 5, string shapeName = "Bullet", string behaviourName = "BaseBullet", string sound = null) {
+	public static BaseBullet Spawn(Vector2 worldPos, float speed, Vector2 direction, GameObject source, int damage = 5, string shapeName = "Bullet", string behaviourName = "BaseBullet", string sound = null) {
 		Type type;
 		GameObject prefab = Resources.Load<GameObject>("Prefabs/Bullets/" + shapeName);
 		try {
@@ -63,10 +63,8 @@ public class BulletManager : MonoBehaviour {
 		bulletSpawned.direction = direction;
 		bulletSpawned.damage = damage;
 		bulletSpawned.BaseInit();
-		//result.AddComponent(type);
-		//result.transform.rotation = MVUtility.TopDownRotationFromDirection(direction);
-		//BaseBullet projectile = result.GetComponent(type) as BaseBullet;
-		bullets.Add(bulletSpawned);
+		result.transform.rotation = Utility.TopDownRotationFromDirection(direction);
+		main.bullets.Add(bulletSpawned);
 		return bulletSpawned;
 	}
 
@@ -74,8 +72,8 @@ public class BulletManager : MonoBehaviour {
 	/// Destroy the bullet
 	/// </summary>
 	/// <param name="theBullet">the bullet to be deleted</param>
-	public void Destroy(BaseBullet theBullet) {
+	public static void DestroyBullet(BaseBullet theBullet) {
 		Destroy(theBullet.bullet);
-		bullets.Remove(theBullet);
+		main.bullets.Remove(theBullet);
 	}
 }

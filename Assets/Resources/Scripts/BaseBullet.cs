@@ -4,7 +4,7 @@ public class BaseBullet {
 
 	public Vector3? Position {
 		get {
-			return transform?.localPosition;
+			return transform.localPosition;
 		}
 	}
 
@@ -45,7 +45,7 @@ public class BaseBullet {
 
 	public virtual void PostUpdate(float deltaTime) {
 		if(!Brain.main.PointInArea(transform.position)) {
-			BulletManager.main.Destroy(this);
+			BulletManager.DestroyBullet(this);
 		}
 	}
 }

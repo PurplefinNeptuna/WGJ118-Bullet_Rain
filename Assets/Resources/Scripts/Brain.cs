@@ -8,6 +8,11 @@ public class Brain : MonoBehaviour {
 	public GameObject area;
 	public SpriteRenderer areaRenderer;
 	public Player player;
+	public List<TextAsset> levels;
+	public int lvlID;
+	public float levelProgress = 0f;
+	public float levelSpeed = 10f;
+	public bool levelDone = false;
 
 	private void Awake() {
 		if(main == null) {
@@ -18,6 +23,19 @@ public class Brain : MonoBehaviour {
 		}
 
 		areaRenderer = area.GetComponent<SpriteRenderer>();
+		levels = new List<TextAsset>(Resources.LoadAll<TextAsset>("Levels"));
+		lvlID = 0;
+	}
+
+	private void Update() {
+		if(!levelDone) {
+			levelProgress += Time.deltaTime * levelSpeed;
+		}
+		else {
+			levelDone = false;
+			levelProgress = 0f;
+			lvlID++;
+		}
 	}
 
 	public bool PointInArea(Vector2 worldPoint) {

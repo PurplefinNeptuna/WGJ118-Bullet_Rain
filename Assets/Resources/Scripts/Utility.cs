@@ -44,6 +44,13 @@ public static class Utility {
 	/// Return the smallest vector
 	/// </summary>
 	public static Vector3 MinVec3(Vector3 a, Vector3 b) {
-		return a.sqrMagnitude < b.sqrMagnitude ? a : b;
+		return a.sqrMagnitude <= b.sqrMagnitude ? a : b;
+	}
+
+	public static bool Similiar(this Vector3 a, Vector3 b) {
+		if(Mathf.Approximately(a.x, b.x) && Mathf.Approximately(a.y, b.y) && Mathf.Approximately(a.z, b.z)) {
+			return true;
+		}
+		return false;
 	}
 }

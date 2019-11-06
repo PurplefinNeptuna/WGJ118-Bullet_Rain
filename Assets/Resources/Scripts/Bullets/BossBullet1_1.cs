@@ -10,7 +10,7 @@ public class BossBullet1_1 : BaseBullet {
 
 	public override void PostUpdate(float deltaTime) {
 		if(Vector3.Distance(transform.localPosition, source) >= 9f) {
-			BulletManager.main.Destroy(this);
+			BulletManager.DestroyBullet(this);
 		}
 	}
 }

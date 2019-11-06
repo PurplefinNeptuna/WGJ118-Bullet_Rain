@@ -6,6 +6,7 @@ public class BaseEnemy : MonoBehaviour {
 	public Transform thisTransform;
 	public Vector3 entrancePos;
 	protected bool entranceDone;
+	public bool stat;
 
 	private void Awake() {
 		thisTransform = transform;
@@ -26,9 +27,9 @@ public class BaseEnemy : MonoBehaviour {
 	}
 
 	private void EntranceMove(float deltaTime) {
-		float dist = Vector3.Distance(thisTransform.position, entrancePos);
 		Vector3 between = entrancePos - thisTransform.position;
-		if(!Mathf.Approximately(dist, 0f)) {
+		stat = entrancePos.Similiar(thisTransform.position);
+		if(!stat) {
 			Vector3 movement = between.normalized * deltaTime * speed;
 			movement = Utility.MinVec3(movement, between);
 			thisTransform.localPosition += movement;
@@ -42,5 +43,9 @@ public class BaseEnemy : MonoBehaviour {
 	}
 
 	public virtual void AIUpdate(float deltaTime) {
+	}
+
+	private void OnDestroy() {
+		SpawnManager.DestroyEnemy(this);
 	}
 }
