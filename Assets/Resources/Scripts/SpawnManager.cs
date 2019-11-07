@@ -114,7 +114,6 @@ public class SpawnManager : MonoBehaviour {
 
 		List<string> enemyList = new List<string>(thisLevel.text.Split(new string[] { "\r\n", "\n" }, System.StringSplitOptions.RemoveEmptyEntries));
 		foreach(string item in enemyList) {
-			Debug.Log(item);
 			enemyQueue.Enqueue(new EnemyData(item));
 		}
 

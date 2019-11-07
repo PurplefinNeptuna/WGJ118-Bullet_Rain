@@ -31,7 +31,7 @@ public class Brain : MonoBehaviour {
 		if(!levelDone) {
 			levelProgress += Time.deltaTime * levelSpeed;
 		}
-		else {
+		else if(lvlID < levels.Count - 1) {
 			levelDone = false;
 			levelProgress = 0f;
 			lvlID++;

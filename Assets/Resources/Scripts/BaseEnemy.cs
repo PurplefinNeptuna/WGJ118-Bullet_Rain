@@ -6,7 +6,6 @@ public class BaseEnemy : MonoBehaviour {
 	public Transform thisTransform;
 	public Vector3 entrancePos;
 	protected bool entranceDone;
-	public bool stat;
 
 	private void Awake() {
 		thisTransform = transform;
@@ -28,7 +27,7 @@ public class BaseEnemy : MonoBehaviour {
 
 	private void EntranceMove(float deltaTime) {
 		Vector3 between = entrancePos - thisTransform.position;
-		stat = entrancePos.Similiar(thisTransform.position);
+		bool stat = entrancePos.Similiar(thisTransform.position);
 		if(!stat) {
 			Vector3 movement = between.normalized * deltaTime * speed;
 			movement = Utility.MinVec3(movement, between);
