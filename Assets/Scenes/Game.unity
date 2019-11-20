@@ -271,6 +271,9 @@ MonoBehaviour:
   player: {fileID: 28689083}
   levels: []
   lvlID: 0
+  levelProgress: 0
+  levelSpeed: 10
+  levelDone: 0
 --- !u!114 &505421403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +286,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a3bedfb8c9cd345a97c40b7912cf26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitingEnemy:
+    dist: 0
+    enemyType: 
+    spawnPos: {x: 0, y: 0, z: 0}
+    targetEntrance: {x: 0, y: 0, z: 0}
+  activeEnemies: []
 --- !u!114 &505421404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,7 +653,7 @@ PrefabInstance:
     - target: {fileID: 3789107366068467058, guid: 956ac1a41240f0b7aa4926b2a6003255,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3789107366068467058, guid: 956ac1a41240f0b7aa4926b2a6003255,
         type: 3}
