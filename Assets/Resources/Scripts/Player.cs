@@ -63,11 +63,15 @@ public class Player : MonoBehaviour {
 		moveDist = Time.deltaTime * moveSpeed;
 		movement.x = moveDist * Input.GetAxisRaw("Horizontal");
 		movement.y = moveDist * Input.GetAxisRaw("Vertical");
+		movement *= Input.GetButton("Fire2") ? 0.5f : 1f;
 	}
 
 	private void PlayerShoot() {
 		if(Input.GetButton("Fire1") && shootCooldown <= 0f) {
-			Instantiate(bullet, BulletPoint, Quaternion.identity, Brain.main.area.transform);
+			Vector3 finalBulletPoint = new Vector3(Random.Range(-playerSize.x / 12f, playerSize.x / 12f), 0f, 0f);
+			finalBulletPoint += BulletPoint;
+			Instantiate(bullet, finalBulletPoint, Quaternion.identity, Brain.main.area.transform);
+			//Instantiate(bullet, BulletPoint, Quaternion.identity, Brain.main.area.transform);
 			while(shootCooldown <= 0f) {
 				shootCooldown += shootCooldownDef;
 			}

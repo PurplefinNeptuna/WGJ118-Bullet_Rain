@@ -12,6 +12,7 @@ public class Boss0 : BaseEnemy {
 
 	public override void AIAwake() {
 		shootDir = Vector2.up;
+		health = 1000;
 	}
 
 	public override void AIUpdate(float deltaTime) {
